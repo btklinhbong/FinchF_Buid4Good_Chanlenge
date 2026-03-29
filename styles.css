@@ -570,6 +570,20 @@ html[data-theme="dark"] .doodle {
   place-items: center;
 }
 
+.feature-visual-image {
+  overflow: hidden;
+  padding: 0;
+  border-radius: 48px;
+}
+
+.feature-visual-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
+
 .premium {
   background: var(--dark-navy);
   color: var(--text-light);
@@ -660,11 +674,13 @@ html[data-theme="dark"] .doodle {
 }
 
 .cta-orb {
+  display: block;
   width: min(240px, 58vw);
-  height: min(240px, 58vw);
+  height: auto;
   margin: 0 auto 16px;
-  border: 2px solid var(--card-border);
-  background: radial-gradient(circle at 35% 35%, #ffffff 0, #e0e0e0 66%, #d4d4d4 100%);
+  border: none;
+  border-radius: 0;
+  background: none;
 }
 
 .feature-grid {
