@@ -426,7 +426,6 @@ html[data-theme="dark"] .doodle {
   top: 18%;
   right: -2%;
   transform: rotate(14deg) scale(1);
-  animation: chart-doodle-drift 3.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
 .doodle-book-1 {
