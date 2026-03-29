@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | finch</title>
+    <meta
+      name="description"
+      content="Learn the mission, vision, and team behind finch, the AI-powered Chrome extension helping students streamline internship applications."
+    />
+    <meta name="theme-color" content="#24364C" />
+    <meta property="og:title" content="About | finch" />
+    <meta
+      property="og:description"
+      content="Meet the team and mission behind Finch's student-focused B2C2B internship technology."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="about.html" />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("finch_theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if ((savedTheme || (prefersDark ? "dark" : "light")) === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and keep default light theme.
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Global fixed header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="finch home">
+          <img class="brand-mark" src="Logo/2 Orange Logo.png" alt="" aria-hidden="true" />
+        </a>
+
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="main-nav">
+          Menu
+        </button>
+
+        <nav class="site-nav" data-nav id="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="product.html">Product</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-primary" href="https://chromewebstore.google.com" target="_blank" rel="noopener noreferrer"
+            >Sign Up</a
+          >
+          <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to dark mode" title="Toggle theme">
+            <span class="theme-toggle-icon" data-theme-icon aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-main">
+      <section class="section" aria-labelledby="mission-vision-heading">
+        <div class="container">
+          <p class="eyebrow">About finch</p>
+          <h1 id="mission-vision-heading">Vision and Mission</h1>
+
+          <!-- Vision and Mission square cards with icon placeholders -->
+          <div class="dual-circles">
+            <article class="value-circle" aria-labelledby="vision-title">
+              <div class="icon-placeholder" aria-hidden="true"></div>
+              <div>
+                <h2 id="vision-title">Vision</h2>
+                <p>
+                  To become the default infrastructure for intentional early-career recruiting — replacing cold, volume-based application systems with a smarter, outcome-driven approach where students are evaluated more efficiently and the path from education to experience is transparent and merit-based.
+                </p>
+              </div>
+            </article>
+
+            <article class="value-circle" aria-labelledby="mission-title">
+              <div class="icon-placeholder" aria-hidden="true"></div>
+              <div>
+                <h2 id="mission-title">Mission</h2>
+                <p>
+                  To transform the internship application process from a frustrating numbers game into an intentional, data-driven strategy that helps students earn the opportunities they deserve — while Finch streamlines, optimizes, and strengthens their path to interviews.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="story-heading">
+        <div class="container">
+          <h2 id="story-heading">Our Story</h2>
+          <p>
+            finch began with one repeated frustration from students: the internship search was less
+            about potential and more about surviving repetitive application admin.
+          </p>
+          <p>
+            We designed finch to remove that bottleneck, combining AI and automation so students
+            can spend more time preparing for interviews and less time filling duplicate forms.
+          </p>
+          <hr class="story-line" />
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="team-heading">
+        <div class="container">
+          <h2 id="team-heading">Team</h2>
+          <div class="team-grid">
+            <article class="team-card">
+              <img class="avatar" src="Founder/Nicanor-Garza-Zazueta-headshot.png" alt="Nicanor Garza-Zazueta" />
+              <h3>Nicanor Garza-Zazueta</h3>
+              <p class="team-title">CEO & Co-founder</p>
+              <p class="team-bio">
+                An Industrial Distribution Engineering student at Texas A&M focused on building ventures that create measurable, lasting impact. A Meloy Fellows Grant recipient, he operates at the intersection of entrepreneurship, strategy, and execution. Known for assembling high-performing teams and driving growth through relationship-building and disciplined sales leadership.
+              </p>
+              <a href="mailto:nicanor14gz@tamu.edu" class="team-email">nicanor14gz@tamu.edu</a>
+            </article>
+
+            <article class="team-card">
+              <img class="avatar" src="Founder/Jose-Tirado-Headshot.jpeg" alt="Jose Tirado" />
+              <h3>Jose Tirado</h3>
+              <p class="team-title">CTO & Co-founder</p>
+              <p class="team-bio">
+                An Industrial Engineering student at Texas A&M who enjoys solving problems and improving how systems operate. Driven by analytical thinking to create practical, measurable impact. Thrives best when encountering nuanced problems that need outside-the-box solutions — focused on streamlining all people and operations within Finch.
+              </p>
+              <a href="mailto:jmtirador@tamu.edu" class="team-email">jmtirador@tamu.edu</a>
+            </article>
+
+            <article class="team-card">
+              <img class="avatar" src="Founder/Carlos-Luna-Headshot.jpeg" alt="Carlos Luna Pena" />
+              <h3>Carlos Luna Pena</h3>
+              <p class="team-title">CTO & Co-founder</p>
+              <p class="team-bio">
+                A junior Computer Science student at Texas A&M with a cybersecurity minor and statistics emphasis. Technical Lead for AIPHRODITE (a computer vision project built with FastAPI, PostgreSQL, and Hugging Face) and co-founder of Finch. His work spans Python, LangChain, LaTeX resume generation, LinkedIn scraping, and automated outreach systems. Placed 2nd in the Accenture Case Competition leading his team's AI operations research.
+              </p>
+              <a href="mailto:carlunpen@tamu.edu" class="team-email">carlunpen@tamu.edu</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global footer with newsletter capture -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <section>
+          <h2>Get finch updates</h2>
+          <p class="muted">Internship tips, product updates, and launch announcements.</p>
+          <form class="newsletter-form" data-storage-form="newsletter" novalidate>
+            <label class="visually-hidden" for="newsletter-email-about">Email address</label>
+            <input
+              id="newsletter-email-about"
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+              aria-label="Email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer-status" data-form-status aria-live="polite"></div>
+        </section>
+
+        <section>
+          <h2>Follow</h2>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M6.94 8.5V21H2.76V8.5h4.18zM4.84 2.5A2.42 2.42 0 1 1 4.8 7.35 2.42 2.42 0 0 1 4.84 2.5zm16.4 10.57V21h-4.17v-6.86c0-1.72-.62-2.9-2.16-2.9-1.17 0-1.87.79-2.18 1.55-.11.27-.14.65-.14 1.02V21H8.42s.06-11.3 0-12.5h4.17v1.77c.55-.85 1.53-2.06 3.73-2.06 2.72 0 4.76 1.78 4.76 5.6z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.9A3.86 3.86 0 0 0 3.9 7.75v8.5a3.86 3.86 0 0 0 3.85 3.85h8.5a3.86 3.86 0 0 0 3.85-3.85v-8.5a3.86 3.86 0 0 0-3.85-3.85h-8.5zm9.1 1.45a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.9A3.1 3.1 0 1 0 12 15.1 3.1 3.1 0 0 0 12 8.9z"
+                />
+              </svg>
+              Instagram
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.78-6.25L6.65 22H3.5l7.23-8.26L1 2h6.26l4.33 5.72L18.9 2zm-1.07 18.15h1.69L6.35 3.76H4.55L17.83 20.15z"
+                />
+              </svg>
+              Twitter
+            </a>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

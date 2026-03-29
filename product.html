@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | finch</title>
+    <meta
+      name="description"
+      content="Explore how finch helps students move from sign-up to submitted applications with AI profile analysis, tailored assets, and ATS autofill."
+    />
+    <meta name="theme-color" content="#24364C" />
+    <meta property="og:title" content="Product | finch" />
+    <meta
+      property="og:description"
+      content="Five-step workflow for AI-powered internship applications across major ATS platforms."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="product.html" />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("finch_theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if ((savedTheme || (prefersDark ? "dark" : "light")) === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {
+          // Ignore storage access issues and keep default light theme.
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Global fixed header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="finch home">
+          <img class="brand-mark" src="Logo/2 Orange Logo.png" alt="" aria-hidden="true" />
+        </a>
+
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="main-nav">
+          Menu
+        </button>
+
+        <nav class="site-nav" data-nav id="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html" aria-current="page">Product</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-primary" href="https://chromewebstore.google.com" target="_blank" rel="noopener noreferrer"
+            >Sign Up</a
+          >
+          <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to dark mode" title="Toggle theme">
+            <span class="theme-toggle-icon" data-theme-icon aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-main">
+      <section class="section" aria-labelledby="how-heading">
+        <div class="container">
+          <p class="eyebrow">How It Works</p>
+          <h1 id="how-heading">A five-step application system built for student speed and quality</h1>
+          <div class="steps">
+            <article class="panel step-item">
+              <div class="step-number" aria-hidden="true">1</div>
+              <div>
+                <h2>Sign up &amp; connect LinkedIn</h2>
+                <p>
+                  Users sign up and connect their LinkedIn profile. Advanced AI analysis generates a
+                  rich candidate profile automatically.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel step-item">
+              <div class="step-number" aria-hidden="true">2</div>
+              <div>
+                <h2>Browse jobs on major ATS platforms</h2>
+                <p>
+                  The Chrome extension works across Greenhouse, Lever, Workday, and other major
+                  platforms — detecting applications as you browse.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel step-item">
+              <div class="step-number" aria-hidden="true">3</div>
+              <div>
+                <h2>Tailored resume &amp; cover letter in seconds</h2>
+                <p>
+                  For each job, Finch generates a tailored resume and cover letter matched to that
+                  specific role in seconds.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel step-item">
+              <div class="step-number" aria-hidden="true">4</div>
+              <div>
+                <h2>Autofill the entire application</h2>
+                <p>
+                  The extension fills the entire form including file uploads — stopping at the final
+                  review page so the user stays in control.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel step-item">
+              <div class="step-number" aria-hidden="true">5</div>
+              <div>
+                <h2>Submit with confidence</h2>
+                <p>
+                  What normally takes 20–30 minutes now takes under 60 seconds — without
+                  sacrificing the quality that gets candidates past ATS filters.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="detail-features-heading">
+        <div class="container">
+          <h2 id="detail-features-heading">Detailed Features</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>AI Candidate Profile Engine</h3>
+              <p>
+                LinkedIn sync and structured extraction build a reusable candidate profile with
+                skills, coursework, projects, and experience context.
+              </p>
+            </article>
+            <div class="feature-illustration" role="img" aria-label="Extension profile analysis mockup">
+              Profile Analysis Mockup
+            </div>
+
+            <div class="feature-illustration" role="img" aria-label="Resume tailoring interface mockup">
+              Resume Tailoring Mockup
+            </div>
+            <article class="feature-card">
+              <h3>Role-Specific Asset Generation</h3>
+              <p>
+                For every internship, Finch generates targeted resume bullets and a companion cover
+                letter draft tuned to role language and ATS keywords.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>ATS Detection and Workflow Adaptation</h3>
+              <p>
+                Finch detects Greenhouse, Lever, Workday, and similar platforms in real time,
+                adapting autofill behavior to each application layout.
+              </p>
+            </article>
+            <div class="feature-illustration" role="img" aria-label="ATS platform compatibility graphic">
+              ATS Compatibility Graphic
+            </div>
+
+            <div class="feature-illustration" role="img" aria-label="Application review page mockup">
+              Final Review Mockup
+            </div>
+            <article class="feature-card">
+              <h3>Human-in-the-Loop Final Control</h3>
+              <p>
+                Finch pauses before submission so students can confirm details, preserving quality,
+                intent, and trust in every final application.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 id="faq-heading">FAQ</h2>
+          <!-- Accessible accordion managed by script.js -->
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-panel-1" id="faq-button-1">
+                Is Finch free?
+              </button>
+              <div class="faq-answer" id="faq-panel-1" role="region" aria-labelledby="faq-button-1" hidden>
+                Yes. Finch includes a student freemium tier with core functionality. Premium plans
+                add advanced AI customization, deeper insights, and priority support.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-panel-2" id="faq-button-2">
+                How does the AI work?
+              </button>
+              <div class="faq-answer" id="faq-panel-2" role="region" aria-labelledby="faq-button-2" hidden>
+                Finch analyzes your profile and each job description to generate tailored resumes,
+                cover letters, and field-level recommendations specific to each role.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-panel-3" id="faq-button-3">
+                Which platforms are supported?
+              </button>
+              <div class="faq-answer" id="faq-panel-3" role="region" aria-labelledby="faq-button-3" hidden>
+                Finch supports Greenhouse, Lever, Workday, and other major ATS platforms used by
+                internship recruiters.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global footer with newsletter capture -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <section>
+          <h2>Get finch updates</h2>
+          <p class="muted">Internship tips, product updates, and launch announcements.</p>
+          <form class="newsletter-form" data-storage-form="newsletter" novalidate>
+            <label class="visually-hidden" for="newsletter-email-product">Email address</label>
+            <input
+              id="newsletter-email-product"
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+              aria-label="Email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer-status" data-form-status aria-live="polite"></div>
+        </section>
+
+        <section>
+          <h2>Follow</h2>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M6.94 8.5V21H2.76V8.5h4.18zM4.84 2.5A2.42 2.42 0 1 1 4.8 7.35 2.42 2.42 0 0 1 4.84 2.5zm16.4 10.57V21h-4.17v-6.86c0-1.72-.62-2.9-2.16-2.9-1.17 0-1.87.79-2.18 1.55-.11.27-.14.65-.14 1.02V21H8.42s.06-11.3 0-12.5h4.17v1.77c.55-.85 1.53-2.06 3.73-2.06 2.72 0 4.76 1.78 4.76 5.6z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.9A3.86 3.86 0 0 0 3.9 7.75v8.5a3.86 3.86 0 0 0 3.85 3.85h8.5a3.86 3.86 0 0 0 3.85-3.85v-8.5a3.86 3.86 0 0 0-3.85-3.85h-8.5zm9.1 1.45a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.9A3.1 3.1 0 1 0 12 15.1 3.1 3.1 0 0 0 12 8.9z"
+                />
+              </svg>
+              Instagram
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.78-6.25L6.65 22H3.5l7.23-8.26L1 2h6.26l4.33 5.72L18.9 2zm-1.07 18.15h1.69L6.35 3.76H4.55L17.83 20.15z"
+                />
+              </svg>
+              Twitter
+            </a>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
