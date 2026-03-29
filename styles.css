@@ -340,7 +340,7 @@ html[data-theme="dark"] .btn-secondary:focus-visible {
   margin: 0 auto;
   text-align: center;
   padding: 94px 0 84px;
-  animation: rise-in 0.85s ease both;
+  animation: rise-in 0.68s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .hero-actions {
@@ -426,6 +426,7 @@ html[data-theme="dark"] .doodle {
   top: 18%;
   right: -2%;
   transform: rotate(14deg) scale(1);
+  animation: chart-doodle-drift 3.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
 .doodle-book-1 {
@@ -497,6 +498,7 @@ html[data-theme="dark"] .doodle {
   height: auto;
   object-fit: contain;
   justify-self: center;
+  animation: arrow-loop 2.1s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
 }
 
 .steps {
@@ -614,6 +616,7 @@ html[data-theme="dark"] .doodle {
   height: auto;
   margin: 0 auto;
   object-fit: contain;
+  animation: crown-bob 2.6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
 
 .form-card {
@@ -685,6 +688,7 @@ html[data-theme="dark"] .doodle {
   border: none;
   border-radius: 0;
   background: none;
+  animation: chart-float 2.3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
 
 .feature-grid {
@@ -939,12 +943,90 @@ html[data-theme="dark"] .doodle {
 @keyframes rise-in {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(26px) scale(0.98);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
   }
 
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes arrow-loop {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+
+  25% {
+    transform: translateX(8px) translateY(-5px) rotate(4deg) scale(1.05);
+  }
+
+  50% {
+    transform: translateX(14px) translateY(0) rotate(0deg) scale(1.08);
+  }
+
+  75% {
+    transform: translateX(8px) translateY(5px) rotate(-4deg) scale(1.05);
+  }
+}
+
+@keyframes crown-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  35% {
+    transform: translateY(-12px) rotate(-2deg) scale(1.04);
+  }
+
+  60% {
+    transform: translateY(-5px) rotate(1deg) scale(1.02);
+  }
+}
+
+@keyframes chart-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  30% {
+    transform: translateY(-10px) scale(1.04) rotate(-1.2deg);
+  }
+
+  60% {
+    transform: translateY(-4px) scale(1.02) rotate(0.8deg);
+  }
+}
+
+@keyframes chart-doodle-drift {
+  0%,
+  100% {
+    transform: rotate(14deg) scale(1) translateY(0);
+  }
+
+  30% {
+    transform: rotate(20deg) scale(1.07) translateY(-8px);
+  }
+
+  65% {
+    transform: rotate(16deg) scale(1.03) translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interlock-arrow,
+  .premium-orb,
+  .cta-orb,
+  .doodle-chart-1 {
+    animation: none;
   }
 }
 
