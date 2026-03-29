@@ -705,9 +705,22 @@ html[data-theme="dark"] .doodle {
   min-height: 220px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   color: var(--text-muted);
   font-weight: 800;
   background: linear-gradient(160deg, var(--bg-soft), var(--bg-surface));
+}
+
+.feature-illustration img {
+  width: 114%;
+  height: clamp(230px, 34vw, 320px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 32px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
 }
 
 .faq-list {
