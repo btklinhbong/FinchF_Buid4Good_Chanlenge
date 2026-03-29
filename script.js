@@ -22,6 +22,17 @@
     return "light";
   }
 
+  function updateVisionImage(theme) {
+    const visionImg = document.querySelector(".value-circle img[src*='Vision']");
+    if (visionImg) {
+      if (theme === "dark") {
+        visionImg.src = "doodle/Vision_darktheme.png";
+      } else {
+        visionImg.src = "doodle/Vision_lightheme.png";
+      }
+    }
+  }
+
   function applyTheme(theme, persist) {
     if (theme === "dark") {
       root.setAttribute("data-theme", "dark");
@@ -38,6 +49,8 @@
     if (themeIcon) {
       themeIcon.innerHTML = theme === "dark" ? sunIcon : moonIcon;
     }
+
+    updateVisionImage(theme);
 
     if (persist) {
       try {
@@ -60,6 +73,8 @@
     }
 
     applyTheme(initialTheme, false);
+
+    updateVisionImage(initialTheme);
 
     themeToggle.addEventListener("click", function () {
       const nextTheme = getCurrentTheme() === "dark" ? "light" : "dark";

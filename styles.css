@@ -750,6 +750,13 @@ html[data-theme="dark"] .doodle {
   flex-shrink: 0;
 }
 
+.value-circle img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .story-line {
   border: 0;
   height: 3px;
